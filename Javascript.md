@@ -49,3 +49,25 @@ let and const are hoisted too, but they stay in a "temporal dead zone", meaning 
 Hoisting can lead to bugs, bad for readbility, incocististne behavior
 
 Best way avoid var, and ust Let and const 
+
+
+
+
+3. How Javasciprt works ?
+
+Call stck, heap ? 
+
+
+
+4. This ?
+
+
+5. Asynconise work 
+
+call back -> Promise  -> Async/Await
+
+
+6. Closure 
+
+
+7.
