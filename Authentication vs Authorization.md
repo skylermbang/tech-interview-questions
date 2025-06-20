@@ -81,3 +81,17 @@
   → Example: Accessing admin-only pages
 - **Implemented via roles** (e.g., `Admin`, `User`)
 - **Analogy**: You entered the building, but may not be allowed in certain meeting rooms
+
+
+
+- ## Real-world Decision Guide
+Session-based Authentication
+
+Best for: internal admin dashboards
+Server manages session (stateful), easier to revoke
+
+JWT-based Authentication
+
+Best for: SPAs, mobile apps, microservices
+Stateless, scalable across distributed systems
+
