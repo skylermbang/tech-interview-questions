@@ -97,3 +97,39 @@ BEGIN TRANSACTION;
 -- your queries here
 
 COMMIT;
+
+
+
+
+
+1. What is ACID properies ?
+Guarantess realiability in DB transactions Ensure all or nothing and 
+consistent ,isolated and durable data changes 
+
+
+2. Read committed and repeatedable read ?
+read comitted prevent direty read ; allow repeatable read
+Repeateable read also prevent non-repeatable reads 
+
+
+3. what is dirty read ?
+Reading data that was chagned by another transcation but not yet committed 
+it may chagnes 
+
+
+4. non-repeatable read 
+when you query it you gets different result 
+
+
+4.1 repeatable read
+when you start the transaction it has snpashop so inside the transaction it only show the data there so additaional quety in the transaction alway give same result 
+
+5. phantom read ?
+Re-reunting the same querygives additaionalrows due to othe trnadations inserting enw crecroding 
+
+
+| Feature               | Read Committed        | Repeatable Read         |
+|----------------------|------------------------|--------------------------|
+| Dirty Read           | ❌ (Prevented)         | ❌ (Prevented)           |
+| Non-repeatable Read  | ✅ (Can happen)        | ❌ (Prevented)           |
+| Phantom Read         | ✅ (Can happen)        | ✅ (Can happen)          |
