@@ -1,0 +1,43 @@
+<div class="blackground">
+  <div class="whitebg">
+    <div class="blueblock"></div>
+    <div class="blueblockh"></div>
+  </div>
+</div>
+
+<style>
+  .blackground {
+    background-color: #EEB850;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top:  0;
+    left: 0;
+  }
+
+  .whitebg {
+    background: #FEFEFF;
+    width: 320px;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+  }
+
+  .blueblock {
+    width: 60px;
+    height: 100%;
+    background: #6592CF;
+    position: absolute;
+    top: 0;
+  }
+
+  .blueblockh {
+    width: 100%;
+    height: 60px;
+    background: #6592CF;
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+</style>
