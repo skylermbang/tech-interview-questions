@@ -52,3 +52,29 @@ At first, I had issues with missing fetch,
 
 
  Also in Spring(JAVA) or .NET Core(C#)
+
+
+ Without DI (의존성 직접 생성)
+```
+const service = new MyService();
+
+```
+With DI (NestJS 방식)
+```
+@Injectable()
+export class MyService {
+  getHello() {
+    return 'Hello!';
+  }
+}
+
+@Controller()
+export class MyController {
+  constructor(private readonly myService: MyService) {}
+
+  @Get()
+  sayHello() {
+    return this.myService.getHello();
+  }
+}
+```
