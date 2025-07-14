@@ -82,4 +82,4 @@ export class MyController {
 NestJS manages it automatically using a built-in IoC (Inversion of Control) container.
 It will creat the Myservice instance and inject in to myController 
 
-
+DI is a design pattern often used in OOP to make class relationships more flexible and testable.

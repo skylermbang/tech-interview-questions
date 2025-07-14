@@ -41,15 +41,18 @@ Implement role-based access (authorization)
 Rate limiting and input validation
 Avoid exposing sensitive data
 
+7. Indempotency
+Doing it twice has the same effect as once
+_GET PUT DELETE HEAD are indempotent
+POST and most of PATCH are not.
+
 
 
 🔐 REST Principles (Constraints)
 Stateless – each request is independent
-
 Client-Server – frontend/backend separation
-
 Cacheable – support HTTP caching (e.g., ETag)
-
 Uniform Interface – standard resource access
-
 Layered System – via proxies/gateways
+
+
