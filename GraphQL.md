@@ -23,3 +23,7 @@ When resolver fetch related rows individually , it triggers N extra DB calls
 In any data-access later, there is lazy fetch related records,
 One query retrieves a list of N parent objects, then N additional queries fetch their child object; 
 using batchingdataloader and eager loading 
+
+Instead making N queries to fetch children per parent, 
+i can use a singkle query with WHER IN or SQL Join then group the result in memory
+keep it to one round trip 
